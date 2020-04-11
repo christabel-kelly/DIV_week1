@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JavaScript program to find the larger number from the two given integers</title>
+</head>
+<body>
+
+<p style="font-size:20px; font-weight:bold; margin-left:50px;">JavaScript program to find the larger number from the two given integers.</p>
+ 
+<script>
+function max(x,y) {
+    var integers = Number.isInteger(x) && Number.isInteger(y);
+    if(integers){
+	if(x==y){
+        document.write( "(" + x + ", " + y + ")" + "....Both numbers are equal!" + " <br><br>") ;
+
+    	}else if(x>y){
+	document.write("(" + x + ", " + y + ")" + "....The larger number is " + x + " <br><br>") ;
+
+	}else{
+	document.write("(" + x + ", " + y + ")" + "...The larger number is " + y + " <br><br>") ;
+    	}
+    }else{
+        document.write("(" + x + ", " + y + ")" + "...Please make sure both numbers are integers" + "<br><br>") ;}
+      
+}
+max(9,9);
+max(4,90);
+max(423,90);
+max(4,901)
+max(890,8900)
+max(9,80);
+max(4.435,90);
+
+
+
+</script>
+
+</body>
+</html>
+
